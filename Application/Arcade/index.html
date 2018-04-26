@@ -3,9 +3,10 @@
 <link rel="shortcut icon" href="/WindowsU/C/Windows/System92/icons/Main.png" type="image/x-icon">
 <link rel="apple-touch-icon" href="/WindowsU/C/Windows/System92/icons/Main.png" type="image/x-icon">
 <body onload="Loaded();">
-  <div id="App" style="padding:20;display:inline-grid;">
+  <div id="App" style="width:450;padding:20;display:inline-grid;">
     <img style="padding:5" id="AppIcon" src="" alt="" width="250" height="250">
     <button id="DownloadButton" onclick="ChangeProfilePicture();">Install App</button>
+    <h1 id="AppName" style="display:absolute;right:100"></h1>
   </div>
   <p></p>
   <div id="descriptiondiv">
@@ -13,6 +14,9 @@
   </div>
 </body>
 <style>
+  body {
+    margin:0;
+  }
   #DownloadButton {
     border: none;
     color: white;
@@ -32,6 +36,7 @@
   }
   function FindApp() {
     document.getElementById("AppIcon").src = 'https://dogindustrialstudios.github.io/Arcade/logo.ico';
+    document.getElementById("AppName").Value = 'Arcade';
     document.getElementById("description").src = 'https://dogindustrialstudios.github.io/Arcade/description.html';
   }
   function Color() {
