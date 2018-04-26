@@ -6,7 +6,7 @@
   <div id="App" style="width:450;padding:20;display:inline-grid;">
     <img style="padding:5" id="AppIcon" src="" alt="" width="250" height="250">
     <button id="DownloadButton" onclick="ChangeProfilePicture();">Install App</button>
-    <h1 id="AppName" style="display:absolute;right:100"></h1>
+    <a id="AppName" style="display:absolute;top:0;right:100"></a>
   </div>
   <p></p>
   <div id="descriptiondiv">
@@ -36,7 +36,7 @@
   }
   function FindApp() {
     document.getElementById("AppIcon").src = 'https://dogindustrialstudios.github.io/Arcade/logo.ico';
-    document.getElementById("AppName").Value = 'Arcade';
+    document.getElementById("AppName").value = 'Arcade';
     document.getElementById("description").src = 'https://dogindustrialstudios.github.io/Arcade/description.html';
   }
   function Color() {
