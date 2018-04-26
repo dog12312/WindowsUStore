@@ -39,7 +39,7 @@
     document.getElementById("AppName").innerHTML = 'Arcade';
     if (localStorage.WindowsU_ArcadeApplication != 'Installed') {
       document.getElementById("DownloadButton").innerHTML = 'Install Application';
-      document.getElementById("DownloadButton").onclick = "localStorage.WindowsU_ArcadeApplication = 'Installed';window.location.reload();";
+      DownloadButton.onclick = "localStorage.WindowsU_ArcadeApplication = 'Installed';window.location.reload();";
     } else {document.getElementById("DownloadButton").innerHTML = 'Application Installed';}
     document.getElementById("description").src = 'https://dogindustrialstudios.github.io/Arcade/description.html';
   }
