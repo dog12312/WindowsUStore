@@ -10,8 +10,11 @@
     <button id="DownloadButton"></button>
   </div>
   <p></p>
+  <div id="extradiv">
+    <iframe style="border:none;" id="extra" src="" width="100%" height="40%">Error Can't find that file</iframe>
+  </div>
   <div id="descriptiondiv">
-    <iframe style="border:none;" id="description" src="" width="100%" height="100%">Error Can't find that file</iframe>
+    <iframe style="border:none;" id="description" src="" width="60%" height="100%">Error Can't find that file</iframe>
   </div>
 </body>
 <style>
@@ -43,6 +46,7 @@
       document.getElementById("DownloadButton").innerHTML = 'Install Application';
       DownloadButton.onclick = "localStorage.WindowsU_ArcadeApplication = 'Installed';window.location.reload();";
     } else {document.getElementById("DownloadButton").innerHTML = 'Application Installed';}
+    document.getElementById("extra").src = 'https://dogindustrialstudios.github.io/Arcade/Extra.html';
     document.getElementById("description").src = 'https://dogindustrialstudios.github.io/Arcade/description.html';
   }
   function Color() {
