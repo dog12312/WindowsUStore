@@ -6,6 +6,7 @@
   <div id="App" style="position: relative;padding:20;display:inline-grid;">
     <img style="padding:5" id="AppIcon" src="" alt="" width="250" height="250">
     <a style="font-size:40;position:absolute;top:0;right:0" id="AppName">AppName</a>
+    <a style="font-size:40;position:absolute;top:50;right:0" id="AppDeveloper">Developer</a>
     <button id="DownloadButton"></button>
   </div>
   <p></p>
@@ -37,6 +38,7 @@
   function FindApp() {
     document.getElementById("AppIcon").src = 'https://dogindustrialstudios.github.io/Arcade/logo.ico';
     document.getElementById("AppName").innerHTML = 'Arcade';
+    document.getElementById("AppName").innerHTML = 'Made By Dog12312';
     if (localStorage.WindowsU_ArcadeApplication != 'Installed') {
       document.getElementById("DownloadButton").innerHTML = 'Install Application';
       DownloadButton.onclick = "localStorage.WindowsU_ArcadeApplication = 'Installed';window.location.reload();";
