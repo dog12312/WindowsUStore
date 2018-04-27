@@ -38,7 +38,7 @@
   function FindApp() {
     document.getElementById("AppIcon").src = 'https://dogindustrialstudios.github.io/Arcade/logo.ico';
     document.getElementById("AppName").innerHTML = 'Arcade';
-    document.getElementById("AppName").innerHTML = 'Made By Dog12312';
+    document.getElementById("AppDeveloper").innerHTML = 'Made By Dog12312';
     if (localStorage.WindowsU_ArcadeApplication != 'Installed') {
       document.getElementById("DownloadButton").innerHTML = 'Install Application';
       DownloadButton.onclick = "localStorage.WindowsU_ArcadeApplication = 'Installed';window.location.reload();";
