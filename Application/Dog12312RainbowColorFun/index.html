@@ -42,7 +42,7 @@
     document.getElementById("AppIcon").src = 'https://png.icons8.com/color/1600/rainbow.png';
     document.getElementById("AppName").innerHTML = 'Rainbow Color Fun';
     document.getElementById("AppDeveloper").innerHTML = 'Made By Dog12312';
-    if (localStorage.WindowsU_ArcadeApplication != 'Installed') {
+    if (localStorage.WindowsU_Dog12312RainbowColorFunApplication != 'Installed') {
       document.getElementById("DownloadButton").innerHTML = 'Install Application';
       document.getElementById("DownloadButton").onclick = function(){localStorage.WindowsU_Dog12312RainbowColorFunApplication = 'Installed';window.location.reload();};
     } else {document.getElementById("DownloadButton").innerHTML = 'Application Installed';}
